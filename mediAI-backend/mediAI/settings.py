@@ -74,7 +74,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'mediAI.wsgi.application'
+WSGI_APPLICATION = 'mediAI.wsgi.app'
 
 
 # Database
