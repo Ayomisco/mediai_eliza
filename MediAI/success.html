@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Successful Login</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <style>
+        :root {
+            --background-color: #f7f9fc;
+            --default-color: #444444;
+            --heading-color: #012970;
+            --accent-color: #4154f1;
+            --surface-color: #ffffff;
+            --contrast-color: #ffffff;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: var(--background-color);
+            color: var(--default-color);
+            overflow-x: hidden;
+        }
+
+        .hero {
+            background: linear-gradient(120deg, #4154f1, #7680d9 50%, #5a67d8);
+            color: var(--contrast-color);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .hero img {
+            object-fit: cover;
+            width: 100%;
+            height: 100%;
+        }
+
+        .hero .container {
+            max-width: 1200px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 30px;
+            z-index: 1;
+        }
+
+        .success-message {
+            background-color: var(--surface-color);
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 12px 36px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 500px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .success-message h2 {
+            color: var(--heading-color);
+        }
+
+        .btn-primary {
+            background-color: var(--accent-color);
+            border-color: var(--accent-color);
+            padding: 12px;
+            font-weight: bold;
+            border-radius: 8px;
+        }
+
+        @media (max-width: 768px) {
+            .hero .container {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .success-message {
+                max-width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Hero Section -->
+    <div class="hero">
+        <div class="container">
+            <!-- Success Message Section -->
+            <div class="col-md-6 success-message">
+                <h2>Login Successful!</h2>
+                <p>Welcome back to your account. You have successfully logged in.</p>
+                <a href="dashboard.html" class="btn btn-primary w-100">Go to Dashboard</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS & Popper.js -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+</body>
+
+</html>
